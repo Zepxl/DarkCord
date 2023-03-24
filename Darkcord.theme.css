@@ -1,43 +1,38 @@
-/* Windows XP theme for Discord */
+@import url('https://discordstyles.github.io/DarkMatter/base.css');
 
-/* Set the background color to light blue */
-:root {
-  --background-primary: #5c87a5;
+/* Move server list to the bottom */
+.guilds-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 40px;
 }
 
-/* Set the accent color to dark blue */
-:root {
-  --brand-experiment: #0048aa;
+/* Adjust server list height */
+.guilds-wrapper .guilds {
+    height: calc(100% - 40px) !important;
 }
 
-/* Set the text color to white */
-:root {
-  --text-normal: #ffffff;
-}
-
-/* Remove the sidebar and user list */
-.guilds-wrapper, .private-channels-3qzwtq {
-  display: none !important;
-}
-
-/* Make the chat window look like a Windows XP window */
-.layer-3QrUeG {
-  background-color: #e1e1e1;
-  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-  border-radius: 5px;
-}
-
-/* Set the font to Tahoma, which is the default font for Windows XP */
-@font-face {
-  font-family: Tahoma;
-  src: url('https://cdn.discordapp.com/attachments/821019907562143796/1088969051625226260/th-94318398.jpg') format('truetype');
-}
-
-* {
-  font-family: Tahoma !important;
-}
-
-/* Add Windows XP wallpaper to the background */
-:root {
-  --background-accent: url('https://cdn.discordapp.com/attachments/771458677978595112/794988913469423872/windows_xp_wallpaper.png') !important;
+/* Dark mode styling */
+.theme-dark {
+    --background-primary: #202225;
+    --background-secondary: #2f3136;
+    --background-secondary-alt: #292b2f;
+    --background-tertiary: #36393f;
+    --background-accent: #4f545c;
+    --background-floating: #292b2f;
+    --text-normal: #dcddde;
+    --text-muted: #72767d;
+    --text-link: #00b0f4;
+    --text-muted: #8e9297;
+    --interactive-normal: #b9bbbe;
+    --interactive-hover: #dcddde;
+    --interactive-active: #7289da;
+    --header-primary: #ffffff;
+    --header-secondary: rgba(255, 255, 255, 0.3);
+    --header-secondary-alt: rgba(255, 255, 255, 0.6);
+    --scrollbar-thin-thumb: #202225;
+    --scrollbar-auto-thumb: #202225;
+    --scrollbar-auto-track: rgba(32, 34, 37, 0.6);
 }
