@@ -1,76 +1,59 @@
-@import url('https://discordthemes.github.io/RevertRebrand/src/revertrebrand.css');
+@import url('https://discordstyles.github.io/HorizontalServerList/css/horizontalscroll.css');
 
-/* Change background color of the app */
+/* Background */
 :root {
-  --background-primary: #36393F;
-  --background-secondary: #2F3136;
-  --background-tertiary: #202225;
+  --background-primary: #1e1e1e;
+  --background-secondary: #2b2b2b;
 }
 
-/* Change color of text and icons */
+/* Text */
 :root {
-  --text-normal: #DCDDDE;
-  --text-muted: #72767D;
-  --text-link: #00B0F4;
-  --text-link-hover: #00A2D1;
-  --interactive-normal: #B9BBBE;
-  --interactive-hover: #FFFFFF;
-  --interactive-active: #00B0F4;
-  --interactive-muted: #4F545C;
-  --header-primary: #FFFFFF;
-  --header-secondary: #B9BBBE;
-  --background-accent: #4F545C;
-  --background-floating: #2F3136;
-  --background-modifier-hover: rgba(79,84,92,0.16);
-  --background-modifier-active: rgba(79,84,92,0.24);
-  --background-modifier-selected: rgba(79,84,92,0.32);
-  --elevation-stroke: 0 0 0 1px rgba(4,4,5,0.15);
-  --elevation-low: 0 1px 0 rgba(4,4,5,0.2),0 1.5px 0 rgba(6,6,7,0.05),0 2px 0 rgba(4,4,5,0.05);
-  --elevation-medium: 0 4px 4px rgba(0,0,0,0.16);
-  --elevation-high: 0 8px 16px rgba(0,0,0,0.24);
-  --scrollbar-thin-thumb: #4F545C;
-  --scrollbar-thin-track: transparent;
-  --scrollbar-auto-thumb: #4F545C;
-  --scrollbar-auto-track: #202225;
+  --text-normal: #dcddde;
+  --text-muted: #72767d;
+  --text-link: #00b0f4;
 }
 
-/* Change server list to be on the bottom */
+/* Unread Indicator */
+.theme-dark .guilds-wrapper .guilds .guild .unread::before {
+  background-color: #f04747;
+}
+
+/* Server List */
+.server-list {
+  background-color: var(--background-secondary);
+  border-radius: 15px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
 .guilds-wrapper {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.guilds-wrapper .guilds {
   position: absolute;
   bottom: 0;
+  left: 0;
+  right: 0;
+  height: 72px;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 5px;
 }
 
-/* Add rounded edges to the app */
-.app {
-  border-radius: 16px;
+.theme-dark .guilds-wrapper .guilds .guild {
+  margin-right: 10px;
 }
 
-/* Add rounded edges to messages */
-.message {
-  border-radius: 16px;
+.theme-dark .guilds-wrapper .guilds .guild .wrapper:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
 }
 
-/* Add rounded edges to popout windows */
-.popout {
-  border-radius: 16px;
-}
-
-/* Add rounded edges to modals */
-.modal {
-  border-radius: 16px;
-}
-
-/* Add rounded edges to context menus */
-.contextMenu-uoJTbz {
-  border-radius: 16px;
-}
-
-/* Add rounded edges to popouts */
-.popoutInner-1YTTLh {
-  border-radius: 16px;
-}
-
-/* Add rounded edges to tooltips */
-.tooltip-2QfLtc {
-  border-radius: 16px;
-}
+/* Horizontal Scroll */
+@import url("https://discordstyles.github.io/HorizontalServerList/css/horizontalscroll.css");
