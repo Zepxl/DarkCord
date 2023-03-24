@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap');
+
+/* ---------- Main Background ---------- */
+:root {
+  --background-primary: #202225;
+  --background-secondary: #2f3136;
+  --background-secondary-alt: #292b2f;
+  --text-normal: #dcddde;
+  --text-muted: #72767d;
+  --text-link: #00b0f4;
+  --interactive-normal: #b9bbbe;
+  --interactive-hover: #7289da;
+  --interactive-active: #7289da;
+  --brand-color: #7289da;
+}
+
+/* ---------- Channel List ---------- */
+.container-2ax-kl {
+  background-color: var(--background-secondary-alt) !important;
+}
+
+/* ---------- Channel Chat ---------- */
+.chat-3bRxxu,
+.messagesWrapper-3lZDfY {
+  background-color: var(--background-secondary) !important;
+}
+
+/* ---------- Text ---------- */
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p {
+  font-family: 'Open Sans', sans-serif !important;
+  color: var(--text-normal) !important;
+}
+
+/* ---------- Links ---------- */
+a {
+  color: var(--text-link) !important;
+}
+
+/* ---------- Icons ---------- */
+.iconWrapper-2OrFZ1 svg {
+  fill: var(--text-normal) !important;
+}
+
+/* ---------- Input Field ---------- */
+.input-2VB9rf {
+  background-color: var(--background-secondary-alt) !important;
+  color: var(--text-normal) !important;
+  border-radius: 5px !important;
+  border: 1px solid var(--background-secondary-alt) !important;
+}
+
+.input-2VB9rf:focus {
+  background-color: var(--background-secondary) !important;
+  color: var(--text-normal) !important;
+  border-color: var(--brand-color) !important;
+}
+
+/* ---------- Buttons ---------- */
+.button-38aScr {
+  color: var(--text-normal) !important;
+  background-color: var(--background-secondary-alt) !important;
+  border-radius: 5px !important;
+  border: none !important;
+}
+
+.button-38aScr:hover {
+  background-color: var(--background-secondary) !important;
+}
+
+/* ---------- User Popout ---------- */
+.popout-2AR8Z0 {
+  background-color: var(--background-primary) !important;
+}
+
+/* ---------- User Profile ---------- */
+.userPopout-3XzG_A {
+  background-color: var(--background-primary) !important;
+}
+
+/* ---------- Context Menu ---------- */
+.contextMenu-HLZMGh {
+  background-color: var(--background-secondary) !important;
+  border-radius: 5px !important;
+}
+
+/* ---------- Discord Nitro Badge ---------- */
+.avatarPremium-1Sw6T4 {
+  background-color: var(--brand-color) !important;
+}
+
+/* ---------- Custom Background Image ---------- */
+/* To add a custom background image, uncomment the code below and replace 'YOUR-IMAGE-URL' with the URL of your desired image. */
+/*
+.appMount-3VJmYg {
+  background-image: url(YOUR-IMAGE-URL) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+*/
+
+/* ---------- Custom Icons ---------- */
+/* To add custom icons, uncomment the code below and replace 'YOUR-ICON-URL' with the URL of your desired icon. */
+/*
+.icon-3Gkj
