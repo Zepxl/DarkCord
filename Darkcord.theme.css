@@ -1,112 +1,76 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap');
+@import url('https://discordthemes.github.io/RevertRebrand/src/revertrebrand.css');
 
-/* ---------- Main Background ---------- */
+/* Change background color of the app */
 :root {
-  --background-primary: #202225;
-  --background-secondary: #2f3136;
-  --background-secondary-alt: #292b2f;
-  --text-normal: #dcddde;
-  --text-muted: #72767d;
-  --text-link: #00b0f4;
-  --interactive-normal: #b9bbbe;
-  --interactive-hover: #7289da;
-  --interactive-active: #7289da;
-  --brand-color: #7289da;
+  --background-primary: #36393F;
+  --background-secondary: #2F3136;
+  --background-tertiary: #202225;
 }
 
-/* ---------- Channel List ---------- */
-.container-2ax-kl {
-  background-color: var(--background-secondary-alt) !important;
+/* Change color of text and icons */
+:root {
+  --text-normal: #DCDDDE;
+  --text-muted: #72767D;
+  --text-link: #00B0F4;
+  --text-link-hover: #00A2D1;
+  --interactive-normal: #B9BBBE;
+  --interactive-hover: #FFFFFF;
+  --interactive-active: #00B0F4;
+  --interactive-muted: #4F545C;
+  --header-primary: #FFFFFF;
+  --header-secondary: #B9BBBE;
+  --background-accent: #4F545C;
+  --background-floating: #2F3136;
+  --background-modifier-hover: rgba(79,84,92,0.16);
+  --background-modifier-active: rgba(79,84,92,0.24);
+  --background-modifier-selected: rgba(79,84,92,0.32);
+  --elevation-stroke: 0 0 0 1px rgba(4,4,5,0.15);
+  --elevation-low: 0 1px 0 rgba(4,4,5,0.2),0 1.5px 0 rgba(6,6,7,0.05),0 2px 0 rgba(4,4,5,0.05);
+  --elevation-medium: 0 4px 4px rgba(0,0,0,0.16);
+  --elevation-high: 0 8px 16px rgba(0,0,0,0.24);
+  --scrollbar-thin-thumb: #4F545C;
+  --scrollbar-thin-track: transparent;
+  --scrollbar-auto-thumb: #4F545C;
+  --scrollbar-auto-track: #202225;
 }
 
-/* ---------- Channel Chat ---------- */
-.chat-3bRxxu,
-.messagesWrapper-3lZDfY {
-  background-color: var(--background-secondary) !important;
+/* Change server list to be on the bottom */
+.guilds-wrapper {
+  position: absolute;
+  bottom: 0;
 }
 
-/* ---------- Text ---------- */
-*,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-span,
-p {
-  font-family: 'Open Sans', sans-serif !important;
-  color: var(--text-normal) !important;
+/* Add rounded edges to the app */
+.app {
+  border-radius: 16px;
 }
 
-/* ---------- Links ---------- */
-a {
-  color: var(--text-link) !important;
+/* Add rounded edges to messages */
+.message {
+  border-radius: 16px;
 }
 
-/* ---------- Icons ---------- */
-.iconWrapper-2OrFZ1 svg {
-  fill: var(--text-normal) !important;
+/* Add rounded edges to popout windows */
+.popout {
+  border-radius: 16px;
 }
 
-/* ---------- Input Field ---------- */
-.input-2VB9rf {
-  background-color: var(--background-secondary-alt) !important;
-  color: var(--text-normal) !important;
-  border-radius: 5px !important;
-  border: 1px solid var(--background-secondary-alt) !important;
+/* Add rounded edges to modals */
+.modal {
+  border-radius: 16px;
 }
 
-.input-2VB9rf:focus {
-  background-color: var(--background-secondary) !important;
-  color: var(--text-normal) !important;
-  border-color: var(--brand-color) !important;
+/* Add rounded edges to context menus */
+.contextMenu-uoJTbz {
+  border-radius: 16px;
 }
 
-/* ---------- Buttons ---------- */
-.button-38aScr {
-  color: var(--text-normal) !important;
-  background-color: var(--background-secondary-alt) !important;
-  border-radius: 5px !important;
-  border: none !important;
+/* Add rounded edges to popouts */
+.popoutInner-1YTTLh {
+  border-radius: 16px;
 }
 
-.button-38aScr:hover {
-  background-color: var(--background-secondary) !important;
+/* Add rounded edges to tooltips */
+.tooltip-2QfLtc {
+  border-radius: 16px;
 }
-
-/* ---------- User Popout ---------- */
-.popout-2AR8Z0 {
-  background-color: var(--background-primary) !important;
-}
-
-/* ---------- User Profile ---------- */
-.userPopout-3XzG_A {
-  background-color: var(--background-primary) !important;
-}
-
-/* ---------- Context Menu ---------- */
-.contextMenu-HLZMGh {
-  background-color: var(--background-secondary) !important;
-  border-radius: 5px !important;
-}
-
-/* ---------- Discord Nitro Badge ---------- */
-.avatarPremium-1Sw6T4 {
-  background-color: var(--brand-color) !important;
-}
-
-/* ---------- Custom Background Image ---------- */
-/* To add a custom background image, uncomment the code below and replace 'YOUR-IMAGE-URL' with the URL of your desired image. */
-/*
-.appMount-3VJmYg {
-  background-image: url(YOUR-IMAGE-URL) !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-}
-*/
-
-/* ---------- Custom Icons ---------- */
-/* To add custom icons, uncomment the code below and replace 'YOUR-ICON-URL' with the URL of your desired icon. */
-/*
-.icon-3Gkj
