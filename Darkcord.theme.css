@@ -1,74 +1,43 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+/* Windows XP theme for Discord */
 
-/* Define the background color and font family for the entire theme */
+/* Set the background color to light blue */
 :root {
-  --background-primary: #1f1f23;
-  --font-family: 'Montserrat', sans-serif;
+  --background-primary: #5c87a5;
 }
 
-/* Set the background color and font size for the channel list */
-.channel-textarea-inner {
-  background-color: var(--background-primary) !important;
-  font-size: 14px !important;
+/* Set the accent color to dark blue */
+:root {
+  --brand-experiment: #0048aa;
 }
 
-/* Set the background color and font size for the server list */
-.guilds-wrapper {
-  background-color: var(--background-primary) !important;
-  font-size: 14px !important;
-  position: fixed !important;
-  bottom: 0px !important;
-  left: 0px !important;
-  width: 100% !important;
-  height: 85px !important;
+/* Set the text color to white */
+:root {
+  --text-normal: #ffffff;
 }
 
-/* Adjust the height and border-radius of the channel list */
-.channel-textarea-inner textarea {
-  height: 40px !important;
-  border-radius: 20px !important;
+/* Remove the sidebar and user list */
+.guilds-wrapper, .private-channels-3qzwtq {
+  display: none !important;
 }
 
-/* Adjust the height, width, and border-radius of the server icons */
-.guilds-wrapper .guild {
-  height: 40px !important;
-  width: 40px !important;
-  border-radius: 20px !important;
+/* Make the chat window look like a Windows XP window */
+.layer-3QrUeG {
+  background-color: #e1e1e1;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  border-radius: 5px;
 }
 
-/* Set the text color and hover color for server icons */
-.guilds-wrapper .guild:hover {
-  background-color: #2f2f33 !important;
+/* Set the font to Tahoma, which is the default font for Windows XP */
+@font-face {
+  font-family: Tahoma;
+  src: url('https://cdn.discordapp.com/attachments/821019907562143796/1088969051625226260/th-94318398.jpg') format('truetype');
 }
 
-.guilds-wrapper .guild .guild-inner {
-  color: #fff !important;
+* {
+  font-family: Tahoma !important;
 }
 
-/* Adjust the width, height, and border-radius of the server icons' badges */
-.guilds-wrapper .guild .badge {
-  width: 16px !important;
-  height: 16px !important;
-  border-radius: 8px !important;
-}
-
-/* Set the font size and color for server icon badges */
-.guilds-wrapper .guild .badge div {
-  font-size: 12px !important;
-  color: #fff !important;
-}
-
-/* Set the color of the unread messages badge */
-.guilds-wrapper .guild .badge .badge-inner {
-  background-color: #7289da !important;
-}
-
-/* Adjust the color of the active server */
-.guilds-wrapper .guild.selected .guild-inner {
-  color: #7289da !important;
-}
-
-/* Adjust the position of the channel list to accommodate the server list at the bottom */
-.chat-3bRxxu {
-  padding-bottom: 85px !important;
+/* Add Windows XP wallpaper to the background */
+:root {
+  --background-accent: url('https://cdn.discordapp.com/attachments/771458677978595112/794988913469423872/windows_xp_wallpaper.png') !important;
 }
