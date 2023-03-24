@@ -67,3 +67,8 @@
 .guilds-wrapper .guild.selected .guild-inner {
   color: #7289da !important;
 }
+
+/* Adjust the position of the channel list to accommodate the server list at the bottom */
+.chat-3bRxxu {
+  padding-bottom: 85px !important;
+}
