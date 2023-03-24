@@ -1,59 +1,69 @@
-@import url('https://discordstyles.github.io/HorizontalServerList/css/horizontalscroll.css');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-/* Background */
+/* Define the background color and font family for the entire theme */
 :root {
-  --background-primary: #1e1e1e;
-  --background-secondary: #2b2b2b;
+  --background-primary: #1f1f23;
+  --font-family: 'Montserrat', sans-serif;
 }
 
-/* Text */
-:root {
-  --text-normal: #dcddde;
-  --text-muted: #72767d;
-  --text-link: #00b0f4;
+/* Set the background color and font size for the channel list */
+.channel-textarea-inner {
+  background-color: var(--background-primary) !important;
+  font-size: 14px !important;
 }
 
-/* Unread Indicator */
-.theme-dark .guilds-wrapper .guilds .guild .unread::before {
-  background-color: #f04747;
-}
-
-/* Server List */
-.server-list {
-  background-color: var(--background-secondary);
-  border-radius: 15px;
-  overflow: hidden;
-  margin-top: 10px;
-}
-
+/* Set the background color and font size for the server list */
 .guilds-wrapper {
-  height: 100%;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  border-radius: 15px;
+  background-color: var(--background-primary) !important;
+  font-size: 14px !important;
+  position: fixed !important;
+  bottom: 0px !important;
+  left: 0px !important;
+  width: 100% !important;
+  height: 85px !important;
 }
 
-.guilds-wrapper .guilds {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 72px;
-  display: flex;
-  overflow-x: auto;
-  overflow-y: hidden;
-  padding: 5px;
+/* Adjust the height and border-radius of the channel list */
+.channel-textarea-inner textarea {
+  height: 40px !important;
+  border-radius: 20px !important;
 }
 
-.theme-dark .guilds-wrapper .guilds .guild {
-  margin-right: 10px;
+/* Adjust the height, width, and border-radius of the server icons */
+.guilds-wrapper .guild {
+  height: 40px !important;
+  width: 40px !important;
+  border-radius: 20px !important;
 }
 
-.theme-dark .guilds-wrapper .guilds .guild .wrapper:hover {
-  background-color: rgba(255, 255, 255, 0.05);
-  border-radius: 10px;
+/* Set the text color and hover color for server icons */
+.guilds-wrapper .guild:hover {
+  background-color: #2f2f33 !important;
 }
 
-/* Horizontal Scroll */
-@import url("https://discordstyles.github.io/HorizontalServerList/css/horizontalscroll.css");
+.guilds-wrapper .guild .guild-inner {
+  color: #fff !important;
+}
+
+/* Adjust the width, height, and border-radius of the server icons' badges */
+.guilds-wrapper .guild .badge {
+  width: 16px !important;
+  height: 16px !important;
+  border-radius: 8px !important;
+}
+
+/* Set the font size and color for server icon badges */
+.guilds-wrapper .guild .badge div {
+  font-size: 12px !important;
+  color: #fff !important;
+}
+
+/* Set the color of the unread messages badge */
+.guilds-wrapper .guild .badge .badge-inner {
+  background-color: #7289da !important;
+}
+
+/* Adjust the color of the active server */
+.guilds-wrapper .guild.selected .guild-inner {
+  color: #7289da !important;
+}
